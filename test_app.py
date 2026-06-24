@@ -4,4 +4,4 @@ def test_home_page():
     tester=app.test_client()
     response=tester.get("/")
     assert response.status_code==200
-    assert b"Welcome to Flas CI/CD Project" in response.data
+    assert b"Welcome to CI/CD Project" in response.data
